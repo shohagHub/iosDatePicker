@@ -14,6 +14,8 @@
 		89CB261921B2252500682BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CB261721B2252500682BFC /* LaunchScreen.storyboard */; };
 		89CB262421B2252600682BFC /* DateTimePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CB262321B2252600682BFC /* DateTimePickerTests.swift */; };
 		89CB262F21B2252600682BFC /* DateTimePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CB262E21B2252600682BFC /* DateTimePickerUITests.swift */; };
+		89CB264021B2257500682BFC /* PickerObjcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89CB263E21B2257500682BFC /* PickerObjcViewController.m */; };
+		89CB264121B2257500682BFC /* PickerObjcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CB263F21B2257500682BFC /* PickerObjcViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,10 @@
 		89CB262A21B2252600682BFC /* DateTimePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateTimePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89CB262E21B2252600682BFC /* DateTimePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimePickerUITests.swift; sourceTree = "<group>"; };
 		89CB263021B2252600682BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89CB263C21B2257400682BFC /* DateTimePicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DateTimePicker-Bridging-Header.h"; sourceTree = "<group>"; };
+		89CB263D21B2257500682BFC /* PickerObjcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerObjcViewController.h; sourceTree = "<group>"; };
+		89CB263E21B2257500682BFC /* PickerObjcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerObjcViewController.m; sourceTree = "<group>"; };
+		89CB263F21B2257500682BFC /* PickerObjcViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerObjcViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 				89CB261521B2252500682BFC /* Assets.xcassets */,
 				89CB261721B2252500682BFC /* LaunchScreen.storyboard */,
 				89CB261A21B2252500682BFC /* Info.plist */,
+				89CB263D21B2257500682BFC /* PickerObjcViewController.h */,
+				89CB263E21B2257500682BFC /* PickerObjcViewController.m */,
+				89CB263F21B2257500682BFC /* PickerObjcViewController.xib */,
+				89CB263C21B2257400682BFC /* DateTimePicker-Bridging-Header.h */,
 			);
 			path = DateTimePicker;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 				TargetAttributes = {
 					89CB260A21B2250E00682BFC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					89CB261E21B2252600682BFC = {
 						CreatedOnToolsVersion = 10.1;
@@ -229,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89CB264121B2257500682BFC /* PickerObjcViewController.xib in Resources */,
 				89CB261921B2252500682BFC /* LaunchScreen.storyboard in Resources */,
 				89CB261621B2252500682BFC /* Assets.xcassets in Resources */,
 				89CB261421B2250F00682BFC /* Main.storyboard in Resources */,
@@ -258,6 +270,7 @@
 			files = (
 				89CB261121B2250E00682BFC /* ViewController.swift in Sources */,
 				89CB260F21B2250E00682BFC /* AppDelegate.swift in Sources */,
+				89CB264021B2257500682BFC /* PickerObjcViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DateTimePicker/Info.plist;
@@ -442,6 +456,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shohag.protocols.DateTimePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DateTimePicker/DateTimePicker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -451,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DateTimePicker/Info.plist;
@@ -461,6 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shohag.protocols.DateTimePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DateTimePicker/DateTimePicker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

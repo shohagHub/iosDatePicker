@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func goToObjcViewController(_ sender: UIButton) {
+        let viewController = PickerObjcViewController.init(nibName: "PickerObjcViewController", bundle: nil)
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
 }
 
